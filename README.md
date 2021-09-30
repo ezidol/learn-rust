@@ -21,7 +21,7 @@
 ## 5. Using Structs to Structure Related Data
 - [x] 5.1. Defining and Instantiating Structs
 - [x] 5.2. An Example Program Using Structs
-- [ ] 5.3. Method Syntax
+- [x] 5.3. Method Syntax
 ## 6. Enums and Pattern Matching
 - [ ] 6.1. Defining an Enum
 - [ ] 6.2. The match Control Flow Operator
