@@ -15,6 +15,19 @@ struct IpAddr {
     kind: IpAddrKind,
     address: String,
 }
+#[derive(Debug)]
+enum Message {
+    Quit,
+    Move {x: i32, y: i32},
+    Write(String),
+    ChangeColor(i32, i32, i32),
+}
+
+impl Message {
+    fn call(&self) -> &Message {
+        self
+    }
+}
 
 fn main() {
     let home = IpAddr {
@@ -35,4 +48,13 @@ fn main() {
     
     println!("home {:#?}", home);
     println!("loopback {:#?}", loopback);
+
+    let m1 = Message::Write(String::from("Hello"));
+    let m1_call = m1.call();
+    println!("{:#?}", m1_call);
+
+    let some_number = Some(10);
+    let absent_number:Option<i8> = None;
+    println!("{:?} {:?}", some_number, absent_number);
+
 }
