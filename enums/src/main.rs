@@ -112,4 +112,29 @@ fn main() {
         3 => println!("three"),
         _ => (),
     }
+    let coin = Coin::Quarter(UsState::Alabama);
+    let mut count = 0;
+    match coin {
+        Coin::Quarter(UsState::Alabama) => println!("Alabama"),
+        _ => count += 1,
+    }
+    println!("{}", count);
+
+    if let Coin::Quarter(state) = coin {
+        println!("{:?}", state);
+        let num = 1;
+    } else {
+        count += 1;
+    }
+    let a = Some(3);
+    if let Some(i) = a {
+        println!("{}", i);
+    } else {
+        println!("no");
+    }
+    match a {
+        Some(3) => println!("3"),
+        _ => (), 
+    }
+    
 }
