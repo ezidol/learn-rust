@@ -29,6 +29,41 @@ impl Message {
     }
 }
 
+#[derive(Debug)]
+enum UsState {
+    Alabama,
+    Alsaka,
+}
+
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter(UsState),
+}
+
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => {
+            println!("Penny");
+            1
+        },
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter(state) => {
+            println!("{:?}", state);
+            25
+        },
+    }
+}
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i+1),
+    }
+}
+
 fn main() {
     let home = IpAddr {
         kind: IpAddrKind::V4,
@@ -57,4 +92,24 @@ fn main() {
     let absent_number:Option<i8> = None;
     println!("{:?} {:?}", some_number, absent_number);
 
+    //The match Control Flow Operator
+    let p1 = Coin::Penny;
+    let n1 = Coin::Nickel;
+    let q1 = Coin::Quarter(UsState::Alabama);
+    let value_p1 = value_in_cents(p1);
+    let value_n1 = value_in_cents(n1);
+    let value_q1 = value_in_cents(q1);
+    println!("{} {} {}", value_p1, value_n1, value_q1);
+
+    //Matching with Option<T>
+    println!("{:?}", plus_one(None));
+
+    //The _ Placeholder
+    let some_u8_value = 0;
+    match some_u8_value {
+        0u8 => println!("Zero"),
+        1 => println!("one"),
+        3 => println!("three"),
+        _ => (),
+    }
 }
