@@ -23,11 +23,11 @@
 - [x] 5.2. An Example Program Using Structs
 - [x] 5.3. Method Syntax
 ## 6. Enums and Pattern Matching
-- [ ] 6.1. Defining an Enum
-- [ ] 6.2. The match Control Flow Operator
-- [ ] 6.3. Concise Control Flow with if let
+- [x] 6.1. Defining an Enum
+- [x] 6.2. The match Control Flow Operator
+- [x] 6.3. Concise Control Flow with if let
 ## 7. Managing Growing Projects with Packages, Crates, and Modules
-- [ ] 7.1. Packages and Crates
+- [x] 7.1. Packages and Crates
 - [ ] 7.2. Defining Modules to Control Scope and Privacy
 - [ ] 7.3. Paths for Referring to an Item in the Module Tree
 - [ ] 7.4. Bringing Paths Into Scope with the use Keyword
