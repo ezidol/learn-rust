@@ -30,11 +30,11 @@
 - [x] 7.1. Packages and Crates
 - [x] 7.2. Defining Modules to Control Scope and Privacy
 - [x] 7.3. Paths for Referring to an Item in the Module Tree
-- [ ] 7.4. Bringing Paths Into Scope with the use Keyword
-- [ ] 7.5. Separating Modules into Different Files
+- [x] 7.4. Bringing Paths Into Scope with the use Keyword
+- [x] 7.5. Separating Modules into Different Files
 ## 8. Common Collections
-- [ ] 8.1. Storing Lists of Values with Vectors
-- [ ] 8.2. Storing UTF-8 Encoded Text with Strings
+- [x] 8.1. Storing Lists of Values with Vectors
+- [x] 8.2. Storing UTF-8 Encoded Text with Strings
 - [ ] 8.3. Storing Keys with Associated Values in Hash Maps
 ## 9. Error Handling
 - [ ] 9.1. Unrecoverable Errors with panic!
