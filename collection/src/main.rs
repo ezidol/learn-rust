@@ -1,19 +1,10 @@
-use std::fs::File;
-use std::io::ErrorKind;
+use std::fs;
+use std::io;
 
 fn main() {
-    let f = File::open("hello.txt");
+    fn read_username_from_file() -> Result<String, io::Error> {
+        fs::read_to_string("hello.txt")
+    }
 
-    let f = match f {
-        Ok(file) => file,
-        Err(error) => match error.kind() {
-            ErrorKind::NotFound => match File::create("hello.txt") {
-                Ok(fc) => fc,
-                Err(e) => panic!("Problem crating the file: {:?}", e),
-            },
-            other_error => {
-                panic!("Problem oepning the file: {:?}", other_error)
-            }
-        }
-    };
+    println!("{:?}", read_username_from_file());
 }
