@@ -1,5 +1,11 @@
+use std::fs;
+use std::io;
+
 fn main() {
-    let s1 = String::from("Hello world");
-    println!("{:?}", s1);
-    
+    fn read_username_from_file() -> Result<String, io::Error> {
+        fs::read_to_string("hello.txt")
+    }
+
+    println!("{:?}", read_username_from_file());
+
 }
