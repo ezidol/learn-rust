@@ -37,9 +37,9 @@
 - [x] 8.2. Storing UTF-8 Encoded Text with Strings
 - [x] 8.3. Storing Keys with Associated Values in Hash Maps
 ## 9. Error Handling
-- [ ] 9.1. Unrecoverable Errors with panic!
-- [ ] 9.2. Recoverable Errors with Result
-- [ ] 9.3. To panic! or Not To panic!
+- [x] 9.1. Unrecoverable Errors with panic!
+- [x] 9.2. Recoverable Errors with Result
+- [x] 9.3. To panic! or Not To panic!
 ## 10. Generic Types, Traits, and Lifetimes
 - [ ] 10.1. Generic Data Types
 - [ ] 10.2. Traits: Defining Shared Behavior
