@@ -41,7 +41,7 @@
 - [x] 9.2. Recoverable Errors with Result
 - [x] 9.3. To panic! or Not To panic!
 ## 10. Generic Types, Traits, and Lifetimes
-- [ ] 10.1. Generic Data Types
+- [x] 10.1. Generic Data Types
 - [ ] 10.2. Traits: Defining Shared Behavior
 - [ ] 10.3. Validating References with Lifetimes
 ## 11. Writing Automated Tests
