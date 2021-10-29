@@ -1,33 +1,23 @@
-fn largest_i32(list: &[i32]) -> i32 {
-    let mut largest = list[0];
-
-    for &item in list {
-        if item > largest {
-            largest = item;
-        }
-    }
-
-    largest
-}
-
-fn largest_char(list: &[char]) -> char {
-    let mut largest = list[0];
-
-    for &item in list {
-        if item > largest {
-            largest = item;
-        }
-    }
-
-    largest
-}
-
+use collection::{Human, Dog, Greeting, hi};
 fn main() {
-    let number_list = vec![11,332,55,33,22];
-    let result = largest_i32(&number_list);
-    println!("{}", result);
+    let h1 = Human {
+        name: String::from("영민"),
+        age: 32,
+    };
+    let d1 = Dog {
+        name: String::from("사모예드"),
+        age: 2,
+    };
+    fn returns_human() -> impl Greeting {
+        Human {
+            name: String::from("사모"),
+            age: 11,
+        }
+    }
+    println!("{}이 {}라고 인사했다", h1.name, h1.hello_all());
+    println!("{}가 {}라고 인사했다", d1.name, d1.hello_all());
+    hi(&d1);
+    println!("{}", returns_human().hello_all());
     
-    let char_list = vec!['e','a','c'];
-    let result = largest_char(&char_list);
-    println!("{}", result);
+    
 }
