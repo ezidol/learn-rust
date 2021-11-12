@@ -42,8 +42,8 @@
 - [x] 9.3. To panic! or Not To panic!
 ## 10. Generic Types, Traits, and Lifetimes
 - [x] 10.1. Generic Data Types
-- [ ] 10.2. Traits: Defining Shared Behavior
-- [ ] 10.3. Validating References with Lifetimes
+- [x] 10.2. Traits: Defining Shared Behavior
+- [x] 10.3. Validating References with Lifetimes
 ## 11. Writing Automated Tests
 - [ ] 11.1. How to Write Tests
 - [ ] 11.2. Controlling How Tests Are Run
